@@ -21,23 +21,35 @@
     justify-content: center;
     align-items: center;
     margin-left: 10%;
-    background-color: red;
+    margin-top: 1%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1rem 1rem 0 0;
 }
 
 .navigation-menu ul li{
     list-style: none;
     margin: 0 1rem;
-    background-color: darkred;
+}
+
+.navigation-menu ul li a{
+    text-decoration: none;
+    color: #000000;
+    font-size: .8rem;
+    font-weight: bold;
+    font-family: Roboto;
+    letter-spacing: 1.5px;
+    padding: 1rem;
 }
 
 .alert-box{
     width: 80%;
     display: flex;
     height: 1.5rem;
-    background-color: #833636;
+    background-color: #0e244d;
     justify-content: center;
     align-items: center;
     margin-left: 10%;
+    border-radius: 0 0 1rem 1rem;
 }
 .alert-box ul{
     display: flex;
@@ -45,11 +57,10 @@
 .alert-box ul li{
     list-style: none;
     margin: 0 1rem;
-    color: #fff;
 }
 
 #inicio{
-    background-color: #f2f2f2;
+    background: url('img/background.png');
     width: 100%;
     height: 100vh;
 }
@@ -58,15 +69,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #dd5252;
+    background: #f9f9f9;
     margin-top: 1.5%;
     width: 80%;
     height: 80%;
     margin-left: 10%;
+    border-radius: 2rem;
 }
 
 .container-large img{
-    background-color: aqua;
     margin-right: 5%;
 }
 
@@ -75,14 +86,28 @@
     flex-direction: column;
     width: 40%;
     height: 90%;
-    background: #ff7b7b;
+    background: #f9f9f9;
+    box-shadow: 0 0 5rem rgba(0,0,0,0.3);
+    border-radius: 2rem;
+    padding: 2%;
 }
 
 .container-info-inicio .title{
     margin-top: 15%;
+    margin-bottom: 10%;
+    margin-left: 25%;
+    padding: .5%;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 50%;
+    border-radius: 5rem;
+    border: 2px solid #000000;
+    background: transparent;
+    font-size: .7rem;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
 }
 
 .container-info-inicio ul{
@@ -96,11 +121,15 @@
 }
 .container-info-inicio .contact{
     margin-left: 25%;
-    margin-top: 40%;
-    background-color: aliceblue;
+    margin-top: 25%;
+    background-color: rgb(93, 158, 255);
     width: 50%;
     height: 12%;
     border-radius: 5rem;
     border: none;
-    
+    font-size: .65rem;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
 }
