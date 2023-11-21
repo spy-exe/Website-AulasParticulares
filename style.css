@@ -209,6 +209,7 @@ button{
     text-align: center;
     width: 100%;
     height: 100vh;
+    background-color: #0e244d;
 }
 
 .sobre-title{
@@ -236,7 +237,6 @@ button{
     align-items: center;
     height: 100vh;
     width: 100%;
-    background: rgb(5, 14, 56);
 }
 
 .sobre-icon1{
@@ -340,14 +340,21 @@ button{
     background: linear-gradient(45deg, #a8a8a8, #fff, #a8a8a8);
 }
 
-
-#contato {
+#precos{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    text-align: center;
-    padding: 2rem; /* Adapte conforme necessário */
+    width: 100%;
+    height: 100vh;
+    background-color: #0e244d;
+}
+
+#alunos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
 }
 
 .alert-box{
@@ -400,6 +407,12 @@ button{
 
 .footer-bottom {
     margin-top: 2rem; /* Espaçamento entre o conteúdo e a parte inferior do Footer */
+}
+.footer-section ul li a img{
+    max-width: 2.2rem;
+    max-height: 2.2rem;
+    width: 2.2rem;
+    height: 2.2rem;
 }
 
 #preco {
