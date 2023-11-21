@@ -15,30 +15,6 @@ button{
     font-family: Poppins, sans-serif;
 }
 
-/* ... (seu CSS existente) ... */
-
-/* Estilos padrão para dispositivos maiores, como desktops e laptops */
-.container-large {
-    width: 80%; /* ou outro valor desejado para dispositivos maiores */
-}
-
-/* Estilos específicos para telas menores, como tablets */
-@media screen and (max-width: 768px) {
-    .container-large {
-        width: 90%; /* ou outro valor desejado para tablets */
-    }
-}
-
-/* Estilos específicos para telas ainda menores, como smartphones */
-@media screen and (max-width: 480px) {
-    .container-large {
-        width: 95%; /* ou outro valor desejado para smartphones */
-    }
-}
-
-/* body {   
-} */
-
 .navigation-menu{
     display: flex;
     justify-content: space-between;
@@ -68,8 +44,8 @@ button{
 }
 
 .logo img{
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
     margin-top: .4rem;
     border-radius: 50%;
     border: 2px solid #000000;
@@ -103,31 +79,8 @@ button{
     transition: .3s;
 }
 
-
-/* .alert-box{
-    width: 100%;
-    display: flex;
-    height: 1.5rem;
-    background-color: #ffd885;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-}
-.alert-box ul{
-    display: flex;
-}
-.alert-box span{
-    margin: 0 1rem;
-    font-size: .7rem;
-    font-weight: 400;
-    letter-spacing: 1.5px;
-} */
-/* .alert-box strong{
-    color: ;
-} */
-
 #inicio{
-    background: url('img/background.png');
+    background-color: white;
     width: 100%;
     height: 100vh;
 }
@@ -149,28 +102,23 @@ button{
     height: 2rem;
     position: absolute;
     top: 0;
-    left: 0;
-    margin-top: 2%;
-    margin-left: 7%;
-    font-size: 1rem;
-    font-weight: 900;
-    text-transform: uppercase;
-    padding: 0.4%;
-    border-radius: 10rem;
-    border: black;
-    background: rgb(255, 203, 134);
-}
-.inicio-container-large .name strong{
-    padding: 1%;
-    font-size: 1rem;
-    font-weight: 900;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
+    margin-top: 1%;
+    font-size: 1.2rem;
+    font-weight: 300;
+    border-radius: 5rem;
+    border: 1px solid black;
+    background: rgb(255, 255, 255);
+    transition: .3s;
 }
 
+.inicio-container-large .name:hover{
+    background: black;
+    color: white;
+    transition: .3s;
+}
+
+
 .inicio-container-large img{
-    display: flex;
-    flex-direction: row;
     margin-right: 5%;
 }
 
@@ -183,7 +131,18 @@ button{
     box-shadow: 0 0 5rem rgba(0,0,0,0.3);
     border-radius: 2rem;
     padding: 2%;
+    transition: .3s;
 }
+
+/* .container-info-inicio:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 5rem rgba(100, 100, 200, 0.5);
+    transition: 0.3s;
+}
+.container-info-inicio:hover .inicio-container-large img {
+    display: none;
+    transition: 0.3s;
+} */
 
 .container-info-inicio .title{
     margin-top: 15%;
@@ -215,22 +174,31 @@ button{
 .container-info-inicio .contact{
     margin-left: 25%;
     margin-top: 25%;
-    background-color: rgb(93, 158, 255);
+    background-color: rgb(118, 173, 255);
+    color: rgb(0, 0, 0);
     width: 50%;
-    height: 12%;
+    height: 10%;
     border-radius: 5rem;
     border: none;
-    font-size: .65rem;
-    letter-spacing: 1.5px;
-    font-weight: bold;
-    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 3px;
     cursor: pointer;
 }
 #btn-down{
     position: absolute;
     bottom: 0;
     margin: 0 auto;
-    margin-bottom: 1%;
+    border: none;
+    background: transparent;
+    width: 10rem;
+    height: 3rem;
+    cursor: pointer;
+}
+#btn-down img{
+    width: 10rem;
+    height: 3rem;
+    transition: .3s;
 }
 
 #sobre {
@@ -298,51 +266,80 @@ button{
     width: 23rem;
     height: 40rem;
     font-size: .9rem;
-    padding: 1%;
     margin: auto;
     border-radius: 2rem;
+    
     background: #f9f9f9;
     box-shadow: 0 0 5rem rgba(0,0,0,0.3);
     transition: .3s;
 }
+.sobre-container-small p{
+    font-size: .9rem;
+    padding: 9%;
+    text-align: justify;
+}
 
-#container-1:hover{
-    transform: scale(1.1);
-    box-shadow: 0 0 5rem rgba(100,100,200,0.1);
-    transition: .3s;
-}
-#container-2:hover{
-    transform: scale(1.1);
-    box-shadow: 0 0 5rem rgba(100,100,200,0.1);
-    transition: .3s;
-}
-#container-3:hover{
+#container-1:hover, #container-2:hover, #container-3:hover{
     transform: scale(1.1);
     box-shadow: 0 0 5rem rgba(100,100,200,0.1);
     transition: .3s;
 }
 
-.container-large h2 {
-    margin-bottom: 1rem; /* Espaçamento entre o título e o conteúdo */
-}
 
-.container-large p {
-    margin-bottom: 1rem; /* Espaçamento entre os parágrafos */
-}
-.navigation-menu.sticky {
-    background: #fff;
-}
-
-/* Estilos para a seção Serviços */
 #servicos {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    text-align: center;
     width: 100%;
     height: 100vh;
 }
+
+.servicos-container-large{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    height: 80%;
+    border-radius: 0 0 2rem 2rem;
+    background: #f9f9f9;
+    box-shadow: 0 0 5rem rgba(0,0,0,0.3);
+    transition: .3s;
+}
+
+.servicos-container-small {
+    display: flex;
+    align-items: center;
+}
+
+.servicos-container-small img {
+    margin-left: 20%;
+    max-width: 20rem;
+    max-height: 20rem;
+    border-radius: 2rem;
+}
+
+.servicos-container-large p{
+    position: relative;
+    left: 5%;
+    width: 50%;
+    font-size: 1rem;
+    padding: 5%;
+}
+.servicos-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 900;
+    font-size: 1.1rem;
+    background: linear-gradient(45deg, #a8a8a8, #fff, #a8a8a8);
+}
+
 
 #contato {
     display: flex;
@@ -353,7 +350,25 @@ button{
     padding: 2rem; /* Adapte conforme necessário */
 }
 
-footer {
+.alert-box{
+    width: 100%;
+    background-color: black;
+    color: rgb(255, 185, 93);
+    height: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+}
+
+.alert-box span{
+    font-size: .7rem;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+}
+
+.footer {
     background-color: #0e244d; /* Cor de fundo do Footer */
     color: #fff; /* Cor do texto do Footer */
     padding: 2rem; /* Espaçamento interno do Footer */
@@ -394,80 +409,5 @@ footer {
     flex-direction: column;
     text-align: center;
     padding: 2rem; /* Adapte conforme necessário */
-}
-
-.container-large table {
-    width: 80%; /* Ajuste conforme necessário */
-    margin-bottom: 2rem; /* Espaçamento entre a tabela e outros elementos */
-    border-collapse: collapse;
-}
-
-.container-large th, .container-large td {
-    padding: 1rem;
-    border: 1px solid #ccc; /* Adapte a cor da borda conforme necessário */
-}
-
-.container-large th {
-    background-color: #0e244d; /* Cor de fundo do cabeçalho da tabela */
-    color: #fff; /* Cor do texto do cabeçalho da tabela */
-}
-
-.container-large tbody tr:nth-child(even) {
-    background-color: #f2f2f2; /* Cor de fundo das linhas pares da tabela */
-}
-
-.container-large p {
-    margin-bottom: 1.5rem; /* Espaçamento entre os parágrafos */
-}
-
-.container-large p:last-child {
-    margin-bottom: 0; /* Remover o espaço inferior do último parágrafo */
-}
-
-/* Adicione estas regras de estilo ao seu arquivo CSS existente */
-
-/* Estilo para o carrossel */
-.carousel {
-    width: 80%; /* Ajuste conforme necessário */
-    margin: 2rem auto; /* Centraliza o carrossel */
-}
-
-/* Estilo para as imagens no carrossel */
-.carousel img {
-    width: 100%;
-    height: auto;
-    border-radius: 0.5rem; /* Borda arredondada (opcional) */
-}
-
-/* Estilo para os pontos indicadores do carrossel */
-.slick-dots {
-    position: absolute;
-    bottom: 0;
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-}
-
-.slick-dots li {
-    margin: 0 0.4rem;
-}
-
-.slick-dots li button {
-    font-size: 1.2rem;
-    line-height: 2rem;
-    color: #fff;
-    opacity: 0.7;
-    background-color: #333;
-    border: none;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    transition: opacity 0.3s ease;
-}
-
-.slick-dots li.slick-active button {
-    opacity: 1;
-    background-color: #f9f9f9; /* Cor quando o ponto está ativo */
 }
 

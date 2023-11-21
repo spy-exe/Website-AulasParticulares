@@ -25,7 +25,7 @@
                             <li><a href="#sobre">Sobre</a></li>
                             <li><a href="#servicos">Serviços</a></li>
                             <li><a href="#preco">Preços</a></li>
-                            <li><a href="#contato">Contato</a></li>
+                            <li><a href="#alunos">Alunos</a></li>
                         </div>
                     </ul>
                 </nav>
@@ -33,7 +33,7 @@
             </header>
 
             <div class="inicio-container-large">
-                <button class="name">Professora <strong>Luciana Machado</strong></button>
+                <button class="name">Luciana Machado</button>
                 <img src="img/mulher.png" alt="Imagem Professora">
                 <div class="container-info-inicio">
                     <button class="title">Especialidades</button>
@@ -47,10 +47,10 @@
                         <li>Vestibulares</li>
                         <li>ENEM</li>
                     </ul>
-                    <button class="contact">Entre em contato</button>
+                    <button class="contact">Saiba mais</button>
                 </div>
                 <!-- Levar para baixo -->
-                <button id="btn-down">v</button>
+                <button id="btn-down"><img src="img/expandir.svg" alt="Expandir Icone"></button>
             </div>
         </section>
 
@@ -81,28 +81,31 @@
         </section>
         
         <section id="servicos">
-            <div class="container-large">
-                <h2>Nossos Serviços Educacionais</h2>
-                <p>
-                    Ofereço aulas dedicadas a disciplinas do ensino fundamental, seguindo uma abordagem [Lúdica/Teórica/Prática]
-                    para tornar o aprendizado mais envolvente.
-                </p>
-                <p>
-                    Utilizo métodos pedagógicos inovadores, integrando a tecnologia de forma a enriquecer a experiência de aprendizagem.
-                    Além das aulas regulares, proporciono [Acompanhamento Personalizado/Atividades Extracurriculares] para garantir o sucesso acadêmico dos meus alunos.
-                </p>
-                <p>
-                    Nosso compromisso vai além da sala de aula. Promovo eventos escolares e participo ativamente em projetos especiais,
-                    buscando criar um ambiente educacional estimulante e inspirador.
-                </p>
+            <h1 class="servicos-title">Serviços</h1>
+            <div class="servicos-container-large">
+                <div class="servicos-container-small">
+                    <img src="img/imagem1.jpeg" alt="Imagem 1">
+                    <p>Ofereço aulas dedicadas a disciplinas do ensino fundamental, seguindo uma abordagem [Lúdica/Teórica/Prática]
+                        para tornar o aprendizado mais envolvente.</p>
+                </div>
+                <div class="servicos-container-small">
+                    <img src="img/imagem2.jpeg" alt="Imagem 2">
+                    <p>Utilizo métodos pedagógicos inovadores, integrando a tecnologia de forma a enriquecer a experiência de aprendizagem.
+                        Além das aulas regulares, proporciono [Acompanhamento Personalizado/Atividades Extracurriculares] para garantir o sucesso acadêmico dos meus alunos.</p>
+                </div>
+                <div class="servicos-container-small">
+                    <img src="img/imagem3.jpg" alt="Imagem 3">
+                    <p>Nosso compromisso vai além da sala de aula. Promovo eventos escolares e participo ativamente em projetos especiais,
+                        buscando criar um ambiente educacional estimulante e inspirador.</p>
+                </div>
             </div>
         </section>
+        
 
         <section id="preco">
             <div class="container-large">
                 <h2>Preços</h2>
         
-                <!-- Tabela de Preços -->
                 <table itemscope itemtype="http://schema.org/Product">
                     <thead>
                         <tr>
@@ -127,16 +130,14 @@
                             <td><span itemprop="price">R$ 180,00</span></td>
                             <td>4 dias</td>
                         </tr>
-                        <!-- Adicione mais linhas conforme necessário -->
                     </tbody>
                 </table>
         
-                <!-- Informações Adicionais -->
+
                 <p>
                     <strong>Política de Pagamento:</strong> O pagamento deve ser efetuado até o dia 5 de cada mês, via transferência bancária ou pix.
                 </p>
-        
-                <!-- Outras Informações -->
+
                 <p>
                     Para mais informações sobre preços e pacotes personalizados, entre em contato conosco.
                 </p>
@@ -150,35 +151,16 @@
                     <div><img src="img/Carrosel/IMG-20231120-WA0008.jpg" alt="Imagem 1"></div>
                     <div><img src="img/Carrosel/IMG-20231120-WA0009.jpg" alt="Imagem 2"></div>
                     <div><img src="img/Carrosel/IMG-20231120-WA0010.jpg" alt="Imagem 3"></div>
-                    <!-- Adicione mais imagens conforme necessário -->
                 </div>
-            </div>
-        </section>
-
-        <section id="contato">
-            <div class="container-large">
-                <h2>Entre em Contato</h2>
-                
-                <!-- Informações de Contato Fictícias -->
-                
-                <p>
-                    <strong>Email:</strong> contato@professoraluciana.com<br>
-                    <strong>Telefone:</strong> (21) 9985-6653<br>
-                    <strong>Endereço:</strong> Rua da Escola, 123 - Cidade Feliz, Estado
-                </p>
-        
-                <!-- Formulário de Contato (opcional) -->
-                <!-- Adicione um formulário de contato, se desejado -->
-        
             </div>
         </section>
     </main>
 
-    <nav class="alert-box">
+    <footer class="alert-box">
         <span><strong>SUPER PROMOÇÃO BLACKFRIDAY </strong>UTILIZE AGORA O CUPOM <strong>#SUPEREDAÇÃO</strong> EM QUALQUER COMPRA E GANHE <strong>30% DE DESCONTO</strong>! </span>
-    </nav>
+    </footer>
 
-    <footer>
+    <footer class="footer">
         <div class="container-large">
             <div class="footer-content">
                 <div class="footer-section">
@@ -216,17 +198,5 @@
             </div>
         </div>
     </footer>
-
-    <script>
-        $(document).ready(function(){
-            $('.carousel').slick({
-                autoplay: true,
-                autoplaySpeed: 2000, // Tempo de exibição de cada imagem em milissegundos
-                dots: true, // Adiciona os pontos de navegação
-                arrows: true // Adiciona as setas de navegação
-            });
-        });
-    </script>
-    
 </body>
 </html>
