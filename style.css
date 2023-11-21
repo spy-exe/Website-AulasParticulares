@@ -15,65 +15,116 @@ button{
     font-family: Poppins, sans-serif;
 }
 
+/* ... (seu CSS existente) ... */
+
+/* Estilos padrão para dispositivos maiores, como desktops e laptops */
+.container-large {
+    width: 80%; /* ou outro valor desejado para dispositivos maiores */
+}
+
+/* Estilos específicos para telas menores, como tablets */
+@media screen and (max-width: 768px) {
+    .container-large {
+        width: 90%; /* ou outro valor desejado para tablets */
+    }
+}
+
+/* Estilos específicos para telas ainda menores, como smartphones */
+@media screen and (max-width: 480px) {
+    .container-large {
+        width: 95%; /* ou outro valor desejado para smartphones */
+    }
+}
+
 /* body {   
 } */
 
 .navigation-menu{
     display: flex;
+    justify-content: space-between;
     height: 4rem;
-    z-index: 10000;
-    transition: 0.7s;
+    z-index: 900;
+    transition: 0.3s;
 }
 
 .navigation-menu ul{
-    width: 80%;
+    position: fixed;
     display: flex;
-    justify-content: center;
+    z-index: 900;
+    width: 100%;
+    height: 7vh;
     align-items: center;
-    margin-left: 10%;
-    margin-top: 1%;
-    background-color: rgb(255, 255, 255);
-    border-radius: 1rem 1rem 0 0;
+    
+    background-color: rgb(255, 255, 255, 0.6);
+    backdrop-filter: blur(4px);
+    border-radius: 0 0 1rem 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+.logo{
+    margin-right: auto;
+    margin-left: 20rem;
+    cursor: pointer;
+}
+
+.logo img{
+    width: 4rem;
+    height: 4rem;
+    margin-top: .4rem;
+    border-radius: 50%;
+    border: 2px solid #000000;
+    transition: .3s;
+}
+
+.nav-margin{
+    display: flex;
+    margin-top: 2.3%;
+    width: 100%;
+    height: 100%;
+    margin-left: 20rem;
 }
 
 .navigation-menu ul li{
     list-style: none;
-    margin: 0 1rem;
 }
 
 .navigation-menu ul li a{
     text-decoration: none;
-    color: #000000;
-    font-size: .8rem;
-    font-weight: bold;
+    color: rgb(39, 39, 39);
+    font-size: 1rem;
+    font-weight: 500;
     font-family: Poppins, sans-serif;
     letter-spacing: 1.5px;
-    padding: 1rem;   
+    padding: 1rem;
+    transition: .3s;
 }
-.navigation-menu.fixed {
-    position: fixed;
-    top: 0;
-    left: 0;
+.navigation-menu ul li a:hover{
+    color: rgb(0, 128, 255);
+    transition: .3s;
+}
+
+
+/* .alert-box{
     width: 100%;
-    z-index: 10000;
-  }
-.alert-box{
-    width: 80%;
     display: flex;
     height: 1.5rem;
-    background-color: #0e244d;
+    background-color: #ffd885;
     justify-content: center;
     align-items: center;
-    margin-left: 10%;
-    border-radius: 0 0 1rem 1rem;
+    position: fixed;
 }
 .alert-box ul{
     display: flex;
 }
-.alert-box ul li{
-    list-style: none;
+.alert-box span{
     margin: 0 1rem;
-}
+    font-size: .7rem;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+} */
+/* .alert-box strong{
+    color: ;
+} */
 
 #inicio{
     background: url('img/background.png');
@@ -81,7 +132,7 @@ button{
     height: 100vh;
 }
 
-.container-large{
+.inicio-container-large{
     position: relative;
     display: flex;
     justify-content: center;
@@ -93,7 +144,7 @@ button{
     border-radius: 2rem;
 }
 
-.container-large .name{
+.inicio-container-large .name{
     width: 30rem;
     height: 2rem;
     position: absolute;
@@ -109,7 +160,7 @@ button{
     border: black;
     background: rgb(255, 203, 134);
 }
-.container-large .name strong{
+.inicio-container-large .name strong{
     padding: 1%;
     font-size: 1rem;
     font-weight: 900;
@@ -117,7 +168,7 @@ button{
     text-transform: uppercase;
 }
 
-.container-large img{
+.inicio-container-large img{
     display: flex;
     flex-direction: row;
     margin-right: 5%;
@@ -182,10 +233,241 @@ button{
     margin-bottom: 1%;
 }
 
-#sobre{
+#sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
     width: 100%;
     height: 100vh;
+}
+
+.sobre-title{
+    padding: 1%;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 900;
+    font-size: 1.1rem;
+    background: linear-gradient(45deg, #a8a8a8, #fff, #a8a8a8);
+}
+
+.sobre-container-small-title{
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+.sobre-container-large{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background: rgb(5, 14, 56);
+}
+
+.sobre-icon1{
+    position: relative;
+    width: 96px;
+    height: 96px;
+    bottom: 8.6rem;
+}
+.sobre-icon2{
+    position: relative;
+    width: 96px;
+    height: 96px;
+    bottom: 8rem;
+}
+.sobre-icon3{
+    position: relative;
+    width: 96px;
+    height: 96px;
+    bottom: 8rem;
+}
+
+.sobre-container-small{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 23rem;
+    height: 40rem;
+    font-size: .9rem;
+    padding: 1%;
+    margin: auto;
+    border-radius: 2rem;
+    background: #f9f9f9;
+    box-shadow: 0 0 5rem rgba(0,0,0,0.3);
+    transition: .3s;
+}
+
+#container-1:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 5rem rgba(100,100,200,0.1);
+    transition: .3s;
+}
+#container-2:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 5rem rgba(100,100,200,0.1);
+    transition: .3s;
+}
+#container-3:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 5rem rgba(100,100,200,0.1);
+    transition: .3s;
+}
+
+.container-large h2 {
+    margin-bottom: 1rem; /* Espaçamento entre o título e o conteúdo */
+}
+
+.container-large p {
+    margin-bottom: 1rem; /* Espaçamento entre os parágrafos */
 }
 .navigation-menu.sticky {
     background: #fff;
 }
+
+/* Estilos para a seção Serviços */
+#servicos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+}
+
+#contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem; /* Adapte conforme necessário */
+}
+
+footer {
+    background-color: #0e244d; /* Cor de fundo do Footer */
+    color: #fff; /* Cor do texto do Footer */
+    padding: 2rem; /* Espaçamento interno do Footer */
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    width: 30%; /* Ajuste conforme necessário */
+}
+
+.footer-section h3 {
+    margin-bottom: 1rem; /* Espaçamento entre o título e os itens */
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 0.5rem 0;
+}
+
+.footer-bottom {
+    margin-top: 2rem; /* Espaçamento entre o conteúdo e a parte inferior do Footer */
+}
+
+#preco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem; /* Adapte conforme necessário */
+}
+
+.container-large table {
+    width: 80%; /* Ajuste conforme necessário */
+    margin-bottom: 2rem; /* Espaçamento entre a tabela e outros elementos */
+    border-collapse: collapse;
+}
+
+.container-large th, .container-large td {
+    padding: 1rem;
+    border: 1px solid #ccc; /* Adapte a cor da borda conforme necessário */
+}
+
+.container-large th {
+    background-color: #0e244d; /* Cor de fundo do cabeçalho da tabela */
+    color: #fff; /* Cor do texto do cabeçalho da tabela */
+}
+
+.container-large tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Cor de fundo das linhas pares da tabela */
+}
+
+.container-large p {
+    margin-bottom: 1.5rem; /* Espaçamento entre os parágrafos */
+}
+
+.container-large p:last-child {
+    margin-bottom: 0; /* Remover o espaço inferior do último parágrafo */
+}
+
+/* Adicione estas regras de estilo ao seu arquivo CSS existente */
+
+/* Estilo para o carrossel */
+.carousel {
+    width: 80%; /* Ajuste conforme necessário */
+    margin: 2rem auto; /* Centraliza o carrossel */
+}
+
+/* Estilo para as imagens no carrossel */
+.carousel img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem; /* Borda arredondada (opcional) */
+}
+
+/* Estilo para os pontos indicadores do carrossel */
+.slick-dots {
+    position: absolute;
+    bottom: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.slick-dots li {
+    margin: 0 0.4rem;
+}
+
+.slick-dots li button {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    color: #fff;
+    opacity: 0.7;
+    background-color: #333;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.slick-dots li.slick-active button {
+    opacity: 1;
+    background-color: #f9f9f9; /* Cor quando o ponto está ativo */
+}
+

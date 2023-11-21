@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professora Luciana Machado - Aulas de português para ensino fundamental.">
+    <meta name="keywords" content="aulas de português, professora de português, ensino fundamental, educação">
+    <meta name="author" content="Seu Nome">
+    <meta name="robots" content="index, follow">
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
     <title>Professora Luciana</title>
@@ -11,43 +15,37 @@
     <main>
         <section id="inicio">
             <header>
-        
                 <nav class="navigation-menu">
-                    
                     <ul>
-                        <!-- <div class="logo">
-                            <img src="img/logo.png" alt="Logo">
-                        </div> -->
-                        <li><a href="#inicio">Início</a></li>
-                        <li><a href="#sobre">Sobre</a></li>
-                        <li><a href="#servicos">Serviços</a></li>
-                        <li><a href="#preco">Preços</a></li>
-                        <li><a href="#contato">Contato</a></li>
+                        <div class="logo">
+                            <img src="img/logo.svg" alt="Logo">
+                        </div>
+                        <div class="nav-margin">
+                            <li><a href="#inicio">Início</a></li>
+                            <li><a href="#sobre">Sobre</a></li>
+                            <li><a href="#servicos">Serviços</a></li>
+                            <li><a href="#preco">Preços</a></li>
+                            <li><a href="#contato">Contato</a></li>
+                        </div>
                     </ul>
                 </nav>
-                <nav class="alert-box">
-                    <ul>
-                        <li><a href="#"><img src="img/facebook.png" alt="Facebook"></a></li>
-                        <li><a href="#"><img src="img/instagram.png" alt="Instagram"></a></li>
-                        <li><a href="#"><img src="img/youtube.png" alt="Youtube"></a></li>
-                    </ul>
-                </nav>
+                
             </header>
 
-            <div class="container-large">
+            <div class="inicio-container-large">
                 <button class="name">Professora <strong>Luciana Machado</strong></button>
                 <img src="img/mulher.png" alt="Imagem Professora">
                 <div class="container-info-inicio">
                     <button class="title">Especialidades</button>
                     <ul>
-                        <li>Especialidade 1</li>
-                        <li>Especialidade 2</li>
-                        <li>Especialidade 3</li>
+                        <li>Português</li>
+                        <li>Redação</li>
+                        <li>Modelos Prontos</li>
                     </ul>
                     <ul>
-                        <li>Especialidade 4</li>
-                        <li>Especialidade 5</li>
-                        <li>Especialidade 6</li>
+                        <li>Pré-vestibulares</li>
+                        <li>Vestibulares</li>
+                        <li>ENEM</li>
                     </ul>
                     <button class="contact">Entre em contato</button>
                 </div>
@@ -57,24 +55,178 @@
         </section>
 
         <section id="sobre">
-
+            <h1 class="sobre-title">Sobre</h1>
+            <div class="sobre-container-large">
+                <div class="sobre-container-small" id="container-1">
+                    <h1 class="sobre-container-small-title">Sobre Mim</h1>
+                    <img class='sobre-icon1' src="img/icone1.svg" alt="Icone 1">
+                    <p>Meu nome é <strong>Luciana Machado</strong>, formada em Letras na UFRJ, tenho 32 anos e sou apaixonada pela grande <strong>Língua Portuguesa</strong>.
+                    </p>
+                </div>
+                
+                <div class="sobre-container-small" id="container-2">
+                    <h1 class="sobre-container-small-title">Experiência</h1>
+                    <img class='sobre-icon2' src="img/icone2.svg" alt="Icone 2">
+                    <p>Com <strong>8 anos de experiência</strong> como professora, busco <strong>proporcionar uma educação de qualidade</strong>,
+                    inspirando meus alunos de forma <strong>didática e criativa</strong>, tornando as aulas mais <strong>envolventes e divertidas</strong>.</p>
+                </div>
+                
+                <div class="sobre-container-small" id="container-3">
+                    <h1 class="sobre-container-small-title">Cursos</h1>
+                    <img class='sobre-icon3' src="img/icone3.svg" alt="Icone 3">
+                    <p>Além da sala de aula, tenho <strong>diversos cursos</strong> para poder trazer varias ferramentas para os meus alunos,
+                    acreditando que essas experiências enriquecem o ambiente educacional, como <strong>pré-vestibulares</strong> e <strong>redações focadas no ENEM</strong>.</p>
+                </div>
+            </div>
         </section>
-
+        
         <section id="servicos">
-
+            <div class="container-large">
+                <h2>Nossos Serviços Educacionais</h2>
+                <p>
+                    Ofereço aulas dedicadas a disciplinas do ensino fundamental, seguindo uma abordagem [Lúdica/Teórica/Prática]
+                    para tornar o aprendizado mais envolvente.
+                </p>
+                <p>
+                    Utilizo métodos pedagógicos inovadores, integrando a tecnologia de forma a enriquecer a experiência de aprendizagem.
+                    Além das aulas regulares, proporciono [Acompanhamento Personalizado/Atividades Extracurriculares] para garantir o sucesso acadêmico dos meus alunos.
+                </p>
+                <p>
+                    Nosso compromisso vai além da sala de aula. Promovo eventos escolares e participo ativamente em projetos especiais,
+                    buscando criar um ambiente educacional estimulante e inspirador.
+                </p>
+            </div>
         </section>
 
         <section id="preco">
+            <div class="container-large">
+                <h2>Preços</h2>
+        
+                <!-- Tabela de Preços -->
+                <table itemscope itemtype="http://schema.org/Product">
+                    <thead>
+                        <tr>
+                            <th itemprop="name">Serviço</th>
+                            <th>Duração</th>
+                            <th itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                <span itemprop="priceCurrency" content="BRL">Preço</span>
+                            </th>
+                            <th>Dias da semana</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                            <td itemprop="name">Pacote Semanal</td>
+                            <td>2 horas</td>
+                            <td><span itemprop="price">R$ 115,00</span></td>
+                            <td>2 dias</td>
+                        </tr>
+                        <tr itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                            <td itemprop="name">Pacote Mensal (4 aulas)</td>
+                            <td>4 horas</td>
+                            <td><span itemprop="price">R$ 180,00</span></td>
+                            <td>4 dias</td>
+                        </tr>
+                        <!-- Adicione mais linhas conforme necessário -->
+                    </tbody>
+                </table>
+        
+                <!-- Informações Adicionais -->
+                <p>
+                    <strong>Política de Pagamento:</strong> O pagamento deve ser efetuado até o dia 5 de cada mês, via transferência bancária ou pix.
+                </p>
+        
+                <!-- Outras Informações -->
+                <p>
+                    Para mais informações sobre preços e pacotes personalizados, entre em contato conosco.
+                </p>
+            </div>
+        </section>
 
+        <section id="imagens">
+            <div class="container-large">
+                <h2>Imagens</h2>
+                <div class="carousel">
+                    <div><img src="img/Carrosel/IMG-20231120-WA0008.jpg" alt="Imagem 1"></div>
+                    <div><img src="img/Carrosel/IMG-20231120-WA0009.jpg" alt="Imagem 2"></div>
+                    <div><img src="img/Carrosel/IMG-20231120-WA0010.jpg" alt="Imagem 3"></div>
+                    <!-- Adicione mais imagens conforme necessário -->
+                </div>
+            </div>
         </section>
 
         <section id="contato">
-
+            <div class="container-large">
+                <h2>Entre em Contato</h2>
+                
+                <!-- Informações de Contato Fictícias -->
+                
+                <p>
+                    <strong>Email:</strong> contato@professoraluciana.com<br>
+                    <strong>Telefone:</strong> (21) 9985-6653<br>
+                    <strong>Endereço:</strong> Rua da Escola, 123 - Cidade Feliz, Estado
+                </p>
+        
+                <!-- Formulário de Contato (opcional) -->
+                <!-- Adicione um formulário de contato, se desejado -->
+        
+            </div>
         </section>
     </main>
 
-    <footer>
+    <nav class="alert-box">
+        <span><strong>SUPER PROMOÇÃO BLACKFRIDAY </strong>UTILIZE AGORA O CUPOM <strong>#SUPEREDAÇÃO</strong> EM QUALQUER COMPRA E GANHE <strong>30% DE DESCONTO</strong>! </span>
+    </nav>
 
+    <footer>
+        <div class="container-large">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Links Úteis</h3>
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#preco">Preços</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-section">
+                    <h3>Redes Sociais</h3>
+                    <ul>
+                        <li><a href="#"><img src="img/facebook.png" alt="Facebook"></a></li>
+                        <li><a href="#"><img src="img/instagram.png" alt="Instagram"></a></li>
+                        <li><a href="#"><img src="img/youtube.png" alt="Youtube"></a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <p>
+                        <strong>Email:</strong> contato@professoraluciana.com<br>
+                        <strong>Telefone:</strong> (21) 9985-6653<br>
+                        <strong>Endereço:</strong> Rua da Escola, 123 - Cidade Feliz, Estado
+                    </p>
+                </div>
+            </div>
+    
+            <div class="footer-bottom">
+                <p>&copy; 2023 Professora Luciana. Todos os direitos reservados.</p>
+            </div>
+        </div>
     </footer>
+
+    <script>
+        $(document).ready(function(){
+            $('.carousel').slick({
+                autoplay: true,
+                autoplaySpeed: 2000, // Tempo de exibição de cada imagem em milissegundos
+                dots: true, // Adiciona os pontos de navegação
+                arrows: true // Adiciona as setas de navegação
+            });
+        });
+    </script>
+    
 </body>
 </html>
