@@ -1,10 +1,31 @@
-window.addEventListener("scroll", function () {
-    var navbar = document.querySelector(".navigation-menu");
+
+
+
+const form = document.getElementById('form');
+
+
+form.addEventListener('submit', function(event){
+
+    event.preventDefault();
+
+    const aulas = document.getElementById('aulas').value;
+   
+
+    const bmi = ((aulas * 80)).toFixed(2);
+
   
-    if (window.scrollY > 0) {
-      navbar.classList.add("fixed");
-    } else {
-      navbar.classList.remove("fixed");
+
+    value.classList.add('attention');
+    
+    document.getElementById('infos').classList.remove('hidden');
+    
+    value.textContent = bmi.replace('.',',' );
+    
+   
+});
+
+form.addEventListener('keypress', function(event) {
+    if (event.key === 'press') {
+        document.getElementById('#calculate').click();
     }
-  });
-  
+});

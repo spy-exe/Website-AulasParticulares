@@ -50,7 +50,7 @@
                     <button class="contact">Saiba mais</button>
                 </div>
                 <!-- Levar para baixo -->
-                <button id="btn-down"><img src="img/expandir.svg" alt="Expandir Icone"></button>
+                <button id="btn-down"><img src="img/expandir.svg" alt="Expandir Icone"><a href="#precos"></a></button>
             </div>
         </section>
 
@@ -104,31 +104,105 @@
 
         <section id="precos">
             <h1 class="precos-title">Preços</h1>
-
-                <p><strong>Política de Pagamento:</strong> O pagamento deve ser efetuado até o dia 5 de cada mês, via transferência bancária ou pix.</p>
-                <p>Para mais informações sobre preços e pacotes personalizados, entre em contato conosco.</p>
-
+            <div class="precos-container-large">
+                <div class="precos-container-small" id="precos-container-1">
+                    <h1>Plano Mensal</h1>
+                    <h2><strong>R$</strong>24,90<strong>/mês</strong></h2>
+                    <ul>
+                        <li><strong>1 mês</strong> de acesso</li>
+                        <li><strong>4 aulas</strong> por semana</li>
+                        <li><strong>6 horas</strong> de duração</li>
+                        <li><strong>2 correções</strong> por semana</li>
+                        <li>Acesso ilimitado a plataforma</li>
+                        <li>Material Incluso</li>
+                    </ul>
+                    <button class="btn-subscribe">Assinar</button>
+                </div>
+                <div class="precos-container-small" id="precos-container-2">
+                    <h1>Plano Anual</h1>
+                    <h2><strong>R$</strong>13,90<strong>/mês</strong></h2>
+                    <ul>
+                        <li><strong>1 ano</strong> de acesso</li>
+                        <li><strong>8 aulas</strong> por semana</li>
+                        <li><strong>12 horas</strong> de duração por dia</li>
+                        <li><strong>5 correções</strong> por semana</li>
+                        <li>Acesso ilimitado a plataforma</li>
+                        <li>Material Incluso</li>
+                    </ul>
+                    <button class="btn-subscribe">Assinar</button>
+                </div>
+                <div class="precos-container-small" id="precos-container-3">
+                    <h1>Plano Semestral</h1>
+                    <h2><strong>R$</strong>19,90<strong>/mês</strong></h2>
+                    <ul>
+                        <li><strong>6 meses</strong> de acesso</li>
+                        <li><strong>6 aulas</strong> por semana</li>
+                        <li><strong>8 horas</strong> de duração por dia</li>
+                        <li><strong>4 correções</strong> por semana</li>
+                        <li>Acesso ilimitado a plataforma</li>
+                        <li>Material Incluso</li>
+                    </ul>
+                    <button class="btn-subscribe">Assinar</button>
+                </div>
+            </div>
         </section>
+<!--
+        <section id="preco-2">
+            <div class="preco-2-container-large">
+                <div class="preco-2-container-small">
+                    <h1>Plano Personalizado</h1>
+                    <div class="input-box">
+                        <form id="form" action="submit"></form>
+                            <label for="aulas">Aulas</label>
+                            <div class="input-field">
+                                <i class="fa-solid fa-weight-hanging"></i>
+                                <input type="number" id="aulas" required>
+                                <span>Nº de Aulas</span>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div>
+                        <button id="calculate">Calcular</button>
+                    </div>    
+                    </form>
+                    <div id="infos" class="hidden">
+                        <div id="result">
+                            <div id="bmi">
+                                <span id="value" class="attention">70</span>
+                                <span>Preço das Aulas</span>
+                            </div>
+                            <div id="description">
+                                <span></span>
+                            </div> 
+                        </div>
+                       
+                    </div>
+                </div>
+                <div id="avisos">
+                    <p><strong>Política de Pagamento:</strong> O pagamento deve ser efetuado até o dia 5 de cada mês, via transferência bancária ou pix.</p>
+                    <p>Para mais informações sobre preços e pacotes personalizados, entre em contato conosco.</p>
+                </div>
+            </div>
+        </div>            
+            </section> -->
 
         <section id="alunos">
-            <div class="container-large">
-                <h2>Alunos</h2>
-                <div class="alunos-container">
-                    <div class="alunos-container-small">
-                        <img src="img/aluno1.jpg" alt="Aluno 1">
-                        <p>“A professora Luciana é muito atenciosa e dedicada. Ela me ajudou a melhorar minhas notas e a me preparar para o vestibular.”</p>
-                        <p><strong>João Silva</strong></p>
-                    </div>
-                    <div class="alunos-container-small">
-                        <img src="img/aluno2.jpg" alt="Aluno 2">
-                        <p>“A professora Luciana é muito atenciosa e dedicada. Ela me ajudou a melhorar minhas notas e a me preparar para o vestibular.”</p>
-                        <p><strong>João Silva</strong></p>
-                    </div>
-                    <div class="alunos-container-small">
-                        <img src="img/aluno3.jpg" alt="Aluno 3">
-                        <p>“A professora Luciana é muito atenciosa e dedicada. Ela me ajudou a melhorar minhas notas e a me preparar para o vestibular.”</p>
-                        <p><strong>João Silva</strong></p>
-                    </div>
+            <div class="alunos-container-large">
+                <div class="alunos-container-small">
+                    <img src="img/aluno1.jpg" alt="Aluno 1">
+                    <p>Sophia Oliveira</p>
+                    <span>“A professora Luciana é muito atenciosa. Ela me ajudou a melhorar minhas notas.”</span>
+                </div>
+                <div class="alunos-container-small">
+                    <img src="img/aluno2.jpg" alt="Aluno 2">
+                    <p>Mariana Costa</p>
+                    <span>“Foram ótimas, com a ajuda dela eu consegui tirar nota 1000 na redação do ENEM.”</span>
+                </div>
+                <div class="alunos-container-small">
+                    <img src="img/aluno3.jpg" alt="Aluno 3">
+                    <p>Matheus Silva</p>
+                    <span>“Achei a professora Luciana muito atenciosa, as aulas são excelentes! Recomendo muito!”</span>
                 </div>
             </div>
         </section>
