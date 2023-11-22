@@ -255,7 +255,7 @@ button{
     position: relative;
     width: 96px;
     height: 96px;
-    bottom: 8rem;
+    bottom: 7rem;
 }
 
 .sobre-container-small{
@@ -263,9 +263,9 @@ button{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 23rem;
-    height: 40rem;
-    font-size: .9rem;
+    width: 20rem;
+    height: 37rem;
+    font-size: 1.2rem;
     margin: auto;
     border-radius: 2rem;
     
@@ -274,7 +274,7 @@ button{
     transition: .3s;
 }
 .sobre-container-small p{
-    font-size: .9rem;
+    font-size: 1rem;
     padding: 9%;
     text-align: justify;
 }
@@ -508,6 +508,10 @@ button{
     bottom: 2rem;
 }
 
+.alunos-container-small span{
+    text-align: justify;
+}
+
 .alert-box{
     width: 100%;
     background-color: rgba(0, 0, 0, 0.8);
@@ -567,10 +571,16 @@ button{
     margin-top: 2rem; /* Espaçamento entre o conteúdo e a parte inferior do Footer */
 }
 
-.footer-scetion ul li a{
+.footer-section ul li a{
     text-decoration: none;
     color: white;
     outline: none;
+    transition: .3s;
+}
+.footer-section ul li a:hover{
+    font-size: .9rem;
+    color: #a8a8a8;
+    transition: .3s;
 }
 
 .footer-section ul li a img{
